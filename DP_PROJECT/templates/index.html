@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>DETECT USING DP</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+	<style>
+		p {text-align: center;}
+		</style>
+</head>
+<br>
+
+<div class="text-typing">
+	<p style = "font-family:courier,arial,helvetica;" >WOHO!! welcome to plaigarism detector using DP&nbsp;</p>
+  </div>
+<br>
+
+<body>
+	<br>
+	<br>
+	
+
+	<form action="/predict" id="textbox" name="myforms" method="POST">
+		<textarea id="para1" name="para1" placeholder="Type your para 1 here"></textarea>
+		<textarea id="para2" name="para2" placeholder="Type your para 2 here"></textarea>
+		<br>
+		<br>
+		<p>
+		<input type="submit" class="my-cta-button" value="Check">
+		</p>
+	</form>
+
+	
+
+
+{% if percent %}
+<p style = "font-family:courier,arial,helvetica;">
+Seems like {{percent}}% of content is identical between them!!
+</p>
+{% endif %}
+	
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<div class="foot">
+	<a href="https://www.linkedin.com/in/neeraj-adityananth/">LinkenIn</a>
+</div>
+
+
+</body>
+
+</html>

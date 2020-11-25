@@ -1,0 +1,85 @@
+
+
+
+.text-typing {
+	padding:20px 30px;
+	background:#f5f5f5;
+	font-size:35px;
+	font-family:monospace;
+	border-radius:50px;
+}
+.text-typing p {
+	margin:0px;
+	white-space:nowrap;
+	overflow:hidden;
+	animation:typing 4s steps(22,end) forwards,
+			  blink 1s infinite;
+}
+@keyframes typing {
+	0% { width:0% }
+	100% { width:100% }
+}
+@keyframes blink {
+	0%,100% {
+	  border-right:2px solid transparent;
+	}
+	50% {
+	  border-right:2px solid #222;
+	}
+}
+  
+body{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background: #fff;
+}
+
+textarea {
+  float: left;
+  width: 50%;
+  margin: 0 20px;
+  height: 100%;
+  padding: 20px;
+  overflow-y: auto;
+  border: none;
+  box-shadow: 0 6px 9px rgba(0,0,0,0.16),0 6px 9px rgba(0,0,0,0.23);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  background: #fff;
+  color: #000;
+  font-size: 20px;
+  resize: none;
+  outline: none;
+  -webkit-font-smoothing:antialiased;
+}
+.my-cta-button{
+	background: #f9f9f9;
+   	border: 2px solid #000000;
+    border-radius: 1000px;
+    box-shadow: 3px 3px #8c8c8c;
+	margin-top: 10px;
+    padding: 10px 36px;
+    color: #000000;
+    display: inline-block;
+   	font: italic bold 20px/1 "Calibri", sans-serif;
+	text-align: center;
+	align-items: center;
+}
+
+.my-cta-button:hover{
+    color: #4d089a;
+    border: 2px solid #4d089a;
+}
+
+.my-cta-button:active{
+    box-shadow: 0 0;
+}
+.foot{
+	width: 100%;
+	height: 30px;
+	font-size: 15px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	font-family: 'Montserrat';
+}
