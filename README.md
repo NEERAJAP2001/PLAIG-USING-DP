@@ -1,6 +1,7 @@
 # PLAIG-USING-DP
 
-## This is a project which detects plaigarism using dynamic programming(LCS concept)
+## Plaigarism is so much common now-a-days , Here comes the optimal solution
+## This is a project which detects plaigarism using dynamic programming(LCS concept) given two paragraphs as input.
 
 ## Techstack : HTML,CSS,PYTHON(Flask)
 
